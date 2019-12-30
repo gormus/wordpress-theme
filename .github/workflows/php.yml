@@ -19,7 +19,7 @@ jobs:
     - uses: actions/checkout@v1
 
     - name: Install WordPress tests
-      run: bash bin/install-wp-tests.sh wordpress_test root '' localhost $WP_VERSION
+      run: bash bin/install-wp-tests.sh wordpress_test root root localhost $WP_VERSION
 
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress --no-suggest
